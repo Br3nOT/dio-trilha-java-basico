@@ -7,7 +7,6 @@ public class Contador {
         int parametroUm = stdin.nextInt();
         System.out.println("Digite o segundo parâmetro: ");
         int parametroDois = stdin.nextInt();
-        int contagem = parametroDois - parametroUm;
 
         try {
 			contar(parametroUm, parametroDois);
@@ -18,8 +17,8 @@ public class Contador {
 
             contagem = parametroUm - parametroDois;
             for (int i = 1; i <= contagem; i++) {
-            System.out.println("Imprimindo o número " + i);*/            
-            //}
+            System.out.println("Imprimindo o número " + i);          
+            }*/
 		}
 		
         stdin.close();
