@@ -14,12 +14,12 @@ public class Contador {
 
 		}catch (ParametrosInvalidosException e) {
             System.err.println("O segundo parâmetro deve ser maior que o primeiro." + e) ;
-            System.out.println("FAREI UM AJUSTE E IREI IMPRIMIR DA MESMA FORMA."); 
+            /*System.out.println("FAREI UM AJUSTE E IREI IMPRIMIR DA MESMA FORMA."); 
 
             contagem = parametroUm - parametroDois;
             for (int i = 1; i <= contagem; i++) {
-            System.out.println("Imprimindo o número " + i);            
-            }
+            System.out.println("Imprimindo o número " + i);*/            
+            //}
 		}
 		
         stdin.close();
@@ -43,7 +43,10 @@ public class Contador {
         }
         else 
         {
-            throw new ParametrosInvalidosException("\nVOCÊ DIGITOU O PRIMEIRO PARÂMETRO MAIOR DO QUE O SEGUNDO");
+            throw new ParametrosInvalidosException(parametroUm, parametroDois);
+
+
+            
         }
 
 	}
