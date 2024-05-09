@@ -45,8 +45,6 @@ public class Contador {
         {
             throw new ParametrosInvalidosException(parametroUm, parametroDois);
 
-
-            
         }
 
 	}
